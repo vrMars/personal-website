@@ -4,41 +4,94 @@
 <head>
 
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-
+<script>
+$('#mypic').mousemove(function(e){
+    var amountMovedX = (e.pageX * -1 / 6);
+    var amountMovedY = (e.pageY * -1 / 6);
+    $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
+  });
+</script>
 <style>
 
 h1   {color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'HelveticaNeue-Light ', serif;
     font-size:50px;
 
 }
 p    {color: white;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'HelveticaNeue-Light ', sans-serif;
 
 }
-#test {color: red;}
+#headcontainer{
+  float:left;
+  width:100%;
+  background-image:url("https://hd.unsplash.com/photo-1463778996521-da8b6f00dacf");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:850px;
+}
+.strokeme
+{
+    color: blue;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
 
 #header {
          position:relative;
          height:150px;
-         background-color: white;
-
-
          }
-#headtxt{
-  color:black;
+
+#headtxt {
+  color:white;
   position:relative;
+  font-family: 'Helvetica-Light', serif;
+  font-size:90px;
+  font-weight:lighter;
   text-align:center;
-  padding:50px;
+  padding-top:222px;
+
+
 }
+.circlepic{
+
+    width:25%;
+    margin-left:40%;
+    border-radius:50%;
+}
+#mypic{
+
+  width=25px;
+  height=100px;
+  float:left;
+  margin-left:14%;
+  margin-top:200px;
+
+}
+
 
 
 </style>
 </head>
 <body>
+<div id="headcontainer">
 
-<div id="header">
-      <h1 id="headtxt">Neelaksh Bhatia</h1>
+  <div id="header">
+
+      <h1 class="strokeme" id="headtxt">Neelaksh Bhatia</h1>
+
+  </div>
+
+    <div id="mypic">
+
+      <img class="circlepic" src="me.jpg" />
+
+
+
+    </div>
 
 </div>
 
