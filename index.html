@@ -4,16 +4,21 @@
 <head>
   <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:100,300" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="parallax.js-1.4.2/parallax.js"></script>
-<script>
-$('#mypic').mousemove(function(e){
-    var amountMovedX = (e.pageX * -1 / 6);
-    var amountMovedY = (e.pageY * -1 / 6);
-    $(this).css('background-position', amountMovedX + 'px ' + amountMovedY + 'px');
-  });
-</script>
+
 <style>
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
 
 h1   {color: white;
     font-family: 'HelveticaNeue-Light ', serif;
@@ -33,7 +38,7 @@ p    {color: white;
   background-repeat:no-repeat;
 
   position:relative;
-  height:1000px;
+  height:950px;
 }
 .strokeme
 {
@@ -51,13 +56,21 @@ p    {color: white;
          }
 
 #headtxt {
-  color:black;
+  color:white;
   position:relative;
   font-family: 'Josefin Sans', sans-serif;
-  font-size:100px;
+  font-size:120px;
   font-weight:light;
   text-align:center;
   padding-top:75px;
+}
+#subheadtxt{
+  color:white;
+  position:relative;
+  font-family: 'VT323', monospace;
+  font-size:80px;
+  text-align:center;
+  margin-top:10px;
 
 
 }
@@ -68,6 +81,10 @@ p    {color: white;
     border-radius:50%;
 }
 
+#aboutme{
+  height:2000px;
+
+}
 
 }
 
@@ -81,12 +98,13 @@ p    {color: white;
   <div id="header">
 
       <h1 class="strokeme" id="headtxt">Neelaksh Bhatia</h1>
-      <h1>FULL STACK DEVELOPER </h1>
+      <h1 class="strokeme" id="subheadtxt">FULL STACK DEVELOPER </h1>
 
   </div>
 
-
-
+</div>
+<div id="aboutme">
+TEST
 </div>
 
 
