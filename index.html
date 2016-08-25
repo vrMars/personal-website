@@ -37,7 +37,9 @@ p    {color: white;
   width:100%;
   float:left;
   position:relative;
-  height:900px;
+
+
+
 }
 .strokeme
 {
@@ -139,19 +141,23 @@ $(window).scroll(function(){
 <script>
 function myFunction() {
           var myelement = document.querySelector("#topmenucontainer");
-          console.log(myelement);
           myelement.style.top=(window.innerHeight)-60 + "px";
         }
       window.onLoad=myFunction();
 </script>
 
 <div id="headcontainer"data-parallax="scroll" data-image-src="https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg">
-    <div class="fixed-width">
       <h1 class="strokeme" id="headtxt">Neelaksh Bhatia</h1>
       <h1 class="strokeme" id="subheadtxt">FULL STACK DEVELOPER </h1>
-    </div>
+  </div>
 </div>
-</div>
+<script>
+function myFunction2() {
+          var myelement2 = document.querySelector("#headcontainer");
+          myelement2.style.height=(window.innerHeight)-60+ "px";
+        }
+      window.onLoad=myFunction2();
+</script>
 
 <div class="clear"></div>
 
