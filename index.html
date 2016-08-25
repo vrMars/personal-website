@@ -38,7 +38,7 @@ p    {color: white;
   background-repeat:no-repeat;
 
   position:relative;
-  height:950px;
+  height:1020px;
 }
 .strokeme
 {
@@ -50,10 +50,7 @@ p    {color: white;
     1px 1px 0 #000;
 }
 
-#header {
-         position:relative;
-         height:150px;
-         }
+
 
 #headtxt {
   color:white;
@@ -83,8 +80,49 @@ p    {color: white;
 
 #aboutme{
   height:2000px;
+  float:left;
+  display:inline;
+  margin-top:100px;
 
 }
+#topmenucontainer{
+  background-color:black;
+  width: 100%;
+  height:80px;
+  top:1020px;
+  position:fixed;
+  z-index:10;
+  float:left;
+  margin:0 auto;
+    text-align:center;
+
+}
+
+#menulinks ul{
+  float:left;
+  height:50px;
+}
+#menulinks li{
+
+  height: 30px;
+  list-style:none;
+  display:inline;
+  font-family: 'VT323', monospace;
+  font-size:30px;
+  color:white;
+  padding: 0px 100px 10px 100px;
+  margin-top:50px
+
+}
+#head{
+  float:none;
+  display:inline;
+
+}
+.clear{
+  clear:both;
+}
+
 
 }
 
@@ -92,19 +130,55 @@ p    {color: white;
 
 </style>
 </head>
+<script>
+$(window).scroll(function(){
+    $("#topmenucontainer").css("top", Math.max(0, 1020 - $(this).scrollTop()));
+});
+</script>
 <body>
+<div id="head">
+<div id="topmenucontainer">
+     <ul id="menulinks">
+      <li>About Me</li>
+      <li>Projects</li>
+      <li>Resume</li>
+    </ul>
+</div>
+
 <div id="headcontainer"data-parallax="scroll" data-image-src="https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg">
-
-  <div id="header">
-
+    <div class="fixed-width">
       <h1 class="strokeme" id="headtxt">Neelaksh Bhatia</h1>
       <h1 class="strokeme" id="subheadtxt">FULL STACK DEVELOPER </h1>
-
-  </div>
-
+    </div>
 </div>
+</div>
+
+<div class="clear"></div>
+
 <div id="aboutme">
 TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+TEST
+<br></br>
+
 </div>
 
 
