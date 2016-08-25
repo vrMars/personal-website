@@ -88,7 +88,7 @@ p    {color: white;
   background-color:black;
   width: 100%;
   height:80px;
-  top:expression(inheight);
+
 
   position:fixed;
   z-index:10;
@@ -121,12 +121,13 @@ p    {color: white;
 }
 </style>
 </head>
-<script>
+<script >
 $(window).scroll(function(){
     $("#topmenucontainer").css("top", Math.max(0, (window.innerHeight)-60 - $(this).scrollTop()));
 });
 </script>
 <body>
+
 <div id="head">
 <div id="topmenucontainer">
      <ul id="menulinks">
@@ -135,6 +136,14 @@ $(window).scroll(function(){
       <li>Resume</li>
     </ul>
 </div>
+<script>
+function myFunction() {
+          var myelement = document.querySelector("#topmenucontainer");
+          console.log(myelement);
+          myelement.style.top=(window.innerHeight)-60 + "px";
+        }
+      window.onLoad=myFunction();
+</script>
 
 <div id="headcontainer"data-parallax="scroll" data-image-src="https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg">
     <div class="fixed-width">
