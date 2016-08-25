@@ -102,18 +102,23 @@ p    {color: white;
 
 #menulinks ul{
   float:left;
-  height:50px;
+
+
 }
 #menulinks li{
 
-  height: 30px;
+
   list-style:none;
   display:inline;
   font-family: 'VT323', monospace;
-  font-size:2vw;
+  font-size:5vh;
   color:white;
   padding: 0px 100px 10px 100px;
-  margin-top:50px
+
+
+  position:relative;
+
+
 }
 
 #head{
@@ -144,6 +149,7 @@ function myFunction() {
           myelement.style.top=(window.innerHeight)-60 + "px";
         }
       window.onLoad=myFunction();
+      window.onresize=myFunction();
 </script>
 
 <div id="headcontainer"data-parallax="scroll" data-image-src="https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg">
@@ -157,6 +163,7 @@ function myFunction2() {
           myelement2.style.height=(window.innerHeight)-60+ "px";
         }
       window.onLoad=myFunction2();
+
 </script>
 
 <div class="clear"></div>
