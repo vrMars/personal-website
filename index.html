@@ -18,7 +18,7 @@
       -webkit-user-select: none;
       font-family: -apple-system;
     }
-    
+
     #forcearea {
       position: fixed;
       top: 0;
@@ -30,15 +30,15 @@
       text-align: center;
       font-size: 24px;
     }
-    
+
     #forcearea p {
       margin: 0;
     }
-    
+
     #forcearea span {
       font-size: 12px;
     }
-    
+
     #guide {
       margin: 200px auto;
       width: 220px;
@@ -88,8 +88,8 @@
     function checkMacForce(e) {
       // max value for trackpad is 3.0 compare to 1.0 on iOS
       forceValue = e.webkitForce / 3;
-      forceNewton=e.webkitForce / 3; 
-      forceNtextElement.innerHTML = ((forceNewton - tareValue) * 1000).toFixed(2) + " <br><span style =\ "color:red\">Uncalibrated for Mac, press \"t\" to reset.</span>";
+      forceNewton=e.webkitForce / 3;
+      forceNtextElement.innerHTML = ((forceValue - tareValue) * 1000).toFixed(2) + " <br><span style=\"color:red\">Uncalibrated for Mac, press \"t\" to reset.</span>";
       forceTextElement.innerHTML = ((forceValue - tareValue) * 1000).toFixed(2) + " <br><span style=\"color:red\">Uncalibrated for Mac, press \"t\" to reset.</span>";
     }
     function refreshNewton() {
@@ -100,9 +100,9 @@
         setTimeout(refreshforceNewton.bind(touch),10);
       }
       forceNtextElement.innerHTML = ((forceNewton - tareValue) * 0.0098).toFixed(2) + " Newtons (maybe)";
-    }            
-        
-        
+    }
+
+
     function refreshforceValue() {
       var touchEvent = this;
       forceValue = 0;
