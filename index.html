@@ -50,6 +50,7 @@
 
 <body>
   <div id="forcearea">
+    <p id="forceN">0.00 N </p>
     <p id="forceAmount">0.00 g</p>
     <div id="buttonarea">
       <button id="tareButton">Calibrate/Reset</button>
@@ -63,7 +64,9 @@
     // based on https://github.com/freinbichler/3d-touch
     var touchElement = document.getElementById('forcearea');
     var forceTextElement = document.getElementById('forceAmount');
+    var forceNtextElement = document.getElementbyID('forceN');
     var forceValue = 0;
+    var forceNewton = 0;
     var tareValue = 0;
     function onTouchStartMove(e) {
       e.preventDefault();
@@ -78,14 +81,28 @@
         tare();
       } else {
         touch = e.touches[0];
-        setTimeout(refreshforceValue.bind(touch), 10);
+        setTimeout(refreshforceNewton.bind(touch), 5);
+        setTimeout(refreshforceValue.bind(touch), 5);
       }
     }
     function checkMacForce(e) {
       // max value for trackpad is 3.0 compare to 1.0 on iOS
       forceValue = e.webkitForce / 3;
-      forceTextElement.innerHTML = ((forceValue - tareValue) * 1000).toFixed(2) + " <br><span style=\"color:red\">Uncalibrated for Mac, press \"t\" to tare.</span>";
+      forceNewton=e.webkitForce / 3; 
+      forceNtextElement.innerHTML = ((forceNewton - tareValue) * 1000).toFixed(2) + " <br><span style =\ "color:red\">Uncalibrated for Mac, press \"t\" to reset.</span>";
+      forceTextElement.innerHTML = ((forceValue - tareValue) * 1000).toFixed(2) + " <br><span style=\"color:red\">Uncalibrated for Mac, press \"t\" to reset.</span>";
     }
+    function refreshNewton() {
+      var touchEvent = this;
+      forceNewton = 0;
+      if (touchEvent) {
+        forceNewton = touchEvent.force || 0;
+        setTimeout(refreshforceNewton.bind(touch),10);
+      }
+      forceNtextElement.innerHTML = ((forceNewton - tareValue) * 0.0098).toFixed(2) + " Newtons (maybe)";
+    }            
+        
+        
     function refreshforceValue() {
       var touchEvent = this;
       forceValue = 0;
