@@ -81,7 +81,7 @@
         tare();
       } else {
         touch = e.touches[0];
-        setTimeout(refreshforceNewton.bind(touch), 10);
+        setTimeout(refreshNewton.bind(touch), 10);
         setTimeout(refreshforceValue.bind(touch), 10);
       }
     }
@@ -97,7 +97,7 @@
       forceNewton = 0;
       if (touchEvent) {
         forceNewton = touchEvent.force || 0;
-        setTimeout(refreshforceNewton.bind(touch),10);
+        setTimeout(refreshNewton.bind(touch),10);
       }
       forceNtextElement.innerHTML = ((forceNewton - tareValue) * 0.0098).toFixed(2) + " Newtons (maybe)";
     }
