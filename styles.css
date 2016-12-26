@@ -74,7 +74,7 @@ body .website {
 }
 
 .demo-blog .mdl-card:hover{
-  -webkit-transform:scale(1.1);
+  -webkit-transform:scale(1.005);
   box-shadow:
   0 5px 5px 5px rgba(0, 0, 0, 0.3);
 
