@@ -39,6 +39,14 @@ body .website {
   font-family: 'Roboto', 'Helvetica', sans-serif;
 }
 
+@keyframes slideIn {
+  0%{
+    transform:translateY(200%);
+  }
+  100%{
+    transform:translateY(0);
+  }
+}
 
 
 .demo-blog .demo-blog__posts {
@@ -71,6 +79,9 @@ body .website {
           align-items: stretch;
   min-height: 360px;
   -webkit-transition: all 0.3s ease-in-out;
+
+  animation: 0.6s ease-in-out 0s 1 slideIn;
+
 }
 
 .demo-blog .mdl-card:hover{
