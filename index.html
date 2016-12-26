@@ -22,17 +22,7 @@
   margin-bottom: 40px;
   z-index: 900;
 }
-.demo-layout-transparent {
-  background: url('images/background.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: black;
-}
 
-</style>
 </head>
 
 <body>
@@ -50,15 +40,6 @@
 }
 </style>
 
-<script>
-window.addEventListener('scroll', function () {
-  document.body.classList[
-    window.scrollY > 20 ? 'add': 'remove'
-  ]
-  ('scrolled');
-
-});
-</script>
 
 <div class="demo-blog mdl-layout mdl-js-layout mdl-layout--fixed-header">
   <header class="mdl-layout__header mdl-layout__header--scroll mdl-layout__header--transparent">

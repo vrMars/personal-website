@@ -70,7 +70,19 @@ body .website {
       -ms-flex-align: stretch;
           align-items: stretch;
   min-height: 360px;
+  -webkit-transition: all 0.3s ease-in-out;
 }
+
+.demo-blog .mdl-card:hover{
+  -webkit-transform:scale(1.1);
+  box-shadow:
+  0 5px 5px 5px rgba(0, 0, 0, 0.3);
+
+
+
+}
+
+
 .demo-blog .mdl-card__title {
   padding: 16px;
   -webkit-flex-grow: 1;
