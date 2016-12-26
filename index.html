@@ -22,40 +22,45 @@
   margin-bottom: 40px;
   z-index: 900;
 }
+<!-- Uses a transparent header that draws on top of the layout's background -->
+
+.demo-layout-transparent {
+background: url('/images/background.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+/* This background is dark, so we set text to white. Use 87% black instead if
+   your background is light. */
+color: white;
+}
+</style>
 
 </head>
 
 <body>
 
-  <!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
-.demo-layout-transparent {
-  background: url('/images/background.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-}
-</style>
 
 
-<div class="demo-blog mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header mdl-layout__header--scroll mdl-layout__header--transparent">
+
+<div class="demo-blog mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">Neelaksh Bhatia</span>
       <!-- Add spacer, to align navigation to the right -->
       <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">About Me</a>
-        <a class="mdl-navigation__link" href="">Projects</a>
-        <a class="mdl-navigation__link" href="">Skills</a>
-        <a class="mdl-navigation__link" href="">Experience</a>
-        <a class="mdl-navigation__link" href="">Resume</a>
-      </nav>
+      <!-- Search -->
+      <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                 mdl-textfield--floating-label mdl-textfield--align-right">
+       <label class="mdl-button mdl-js-button mdl-button--icon"
+              for="fixed-header-drawer-exp">
+         <i class="material-icons">search</i>
+       </label>
+       <div class="mdl-textfield__expandable-holder">
+         <input class="mdl-textfield__input" type="text" name="sample"
+                id="fixed-header-drawer-exp">
+       </div>
+     </div>
     </div>
   </header>
   <div class="mdl-layout__drawer">
@@ -105,7 +110,7 @@
         </div>
       </div>
 
-      <div class="mdl-card skills mdl-cell mdl-cell--8-col mdl-cell-6-col-dekstop">
+      <div class="mdl-card skills mdl-cell mdl-cell--6-col mdl-cell-8-col-mobile">
 
         <div class="mdl-card__media mdl-color-text--blue-grey-50">
           <h3><a href="skills.html">Skills</a></h3>
