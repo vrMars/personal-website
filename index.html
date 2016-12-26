@@ -1,0 +1,186 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Neelaksh's Personal Website!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Neelaksh Bhatia</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.red-light_green.min.css" />
+<link rel="stylesheet" href="styles.css">
+
+<style>
+#view-source{
+  position: fixed;
+  display: block;
+  right: 0;
+  bottom: 0;
+  margin-right: 40px;
+  margin-bottom: 40px;
+  z-index: 900;
+}
+.demo-layout-transparent {
+  background: url('images/background.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: black;
+}
+
+</style>
+</head>
+
+<body>
+
+  <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent {
+  background: url('/images/background.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+
+<script>
+window.addEventListener('scroll', function () {
+  document.body.classList[
+    window.scrollY > 20 ? 'add': 'remove'
+  ]
+  ('scrolled');
+
+});
+</script>
+
+<div class="demo-blog mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--scroll mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title">Neelaksh Bhatia</span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">About Me</a>
+        <a class="mdl-navigation__link" href="">Projects</a>
+        <a class="mdl-navigation__link" href="">Skills</a>
+        <a class="mdl-navigation__link" href="">Experience</a>
+        <a class="mdl-navigation__link" href="">Resume</a>
+      </nav>
+    </div>
+  </header>
+  <div class="mdl-layout__drawer">
+    <span class="mdl-layout-title">Contact Info.</span>
+    <nav class="mdl-navigation">
+      <a class="mdl-navigation__link" href="">hello@neelaksh.me</a>
+      <a class="mdl-navigation__link" href="">(+1) 416-996-6335</a>
+      <a class="mdl-navigation__link" href="https://github.com/vrMars">github/vrMars</a>
+      <a class="mdl-navigation__link" href="https://ca.linkedin.com/in/neelaksh-bhatia-643658bb
+">/LinkedIn/Neelaksh</a>
+    </nav>
+  </div>
+  <main class="mdl-layout__content">
+    <div class="demo-blog__posts mdl-grid">
+
+      <div class="mdl-card aboutme mdl-cell mdl-cell--8-col">
+
+        <div class="mdl-card__media mdl-color-text--blue-grey-50">
+          <h3><a href="aboutme.html">About Me</a></h3>
+        </div>
+
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="myInitials"></div>
+          <div>
+            <strong>Neelaksh Bhatia</strong>
+            <span>Computer Science Student</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-card projects mdl-cell mdl-cell--8-col mdl-cell--4-col-desktop">
+        <div class="mdl-card__media  mdl-color-text--yellow-50">
+          <h3><a href="projects.html">Projects</a></h3>
+        </div>
+      </div>
+
+      <div class="mdl-card resume mdl-cell mdl-cell--12-col">
+        <div class="mdl-card__media mdl-color-text--grey-50">
+          <h3><a href="entry.html">Resume</a></h3>
+        </div>
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="myInitials"></div>
+          <div>
+            <strong>Neelaksh Bhatia</strong>
+            <span>2 days ago</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="mdl-card skills mdl-cell mdl-cell--6-col">
+
+        <div class="mdl-card__media mdl-color-text--blue-grey-50">
+          <h3><a href="skills.html">Skills</a></h3>
+        </div>
+
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="myInitials"></div>
+          <div>
+            <strong>Neelaksh Bhatia</strong>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="mdl-card experience mdl-cell mdl-cell--8-col mdl-cell--6-col-desktop">
+        <div class="mdl-card__media meta mdl-color-text--yellow-50">
+          <h3><a href="experience.html">Experience</a></h3>
+        </div>
+
+        <div class="mdl-card__supporting-text meta mdl-color-text--grey-600">
+          <div class="myInitials"></div>
+          <div>
+            <strong>Neelaksh Bhatia</stong>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="mdl-mini-footer">
+      <div class="mdl-mini-footer--left-section">
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__twitter">
+          <span class="visuallyhidden">Twitter</span>
+        </button>
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__blogger">
+          <span class="visuallyhidden">Facebook</span>
+        </button>
+        <button class="mdl-mini-footer--social-btn social-btn social-btn__gplus">
+          <span class="visuallyhidden">Google Plus</span>
+        </button>
+      </div>
+      <div class="mdl-mini-footer--right-section">
+        <button class="mdl-mini-footer--social-btn social-btn__share">
+          <i class="material-icons" role="presentation">share</i>
+          <span class="visuallyhidden">share</span>
+        </button>
+      </div>
+    </footer>
+</main>
+</div>
+
+
+
+
+</body>
+
+
+
+
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
