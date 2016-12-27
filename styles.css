@@ -235,7 +235,16 @@ body .website {
 
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
-  background-image: url('images/project.png');
+  background-image: url('images/project.jpg');
+}
+.demo-blog .projects:hover .mdl-card__media {
+  font-size: 20px;
+  font-weight: 500;
+
+
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-image: url('images/project.gif');
 }
 .demo-blog .projects .mdl-card__media img {
   width: 64px;
@@ -250,11 +259,20 @@ body .website {
 .demo-blog .experience .mdl-card__media {
   background-image: url('images/experience.jpg');
 }
+.demo-blog .experience:hover .mdl-card__media {
+  background-image: url('images/experience.gif');
+}
 .demo-blog .skills .mdl-card__media {
   background-image: url('images/skills.jpg');
 }
+.demo-blog .skills:hover .mdl-card__media {
+  background-image: url('images/skills.gif');
+}
 .demo-blog .resume .mdl-card__media {
   background-image: url('images/resume.jpg');
+}
+.demo-blog .resume:hover .mdl-card__media {
+  background-image: url('images/resume.gif');
 }
 .demo-blog .demo-blog__posts > .demo-nav {
   margin: 12px 15px;
