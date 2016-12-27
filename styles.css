@@ -48,6 +48,9 @@ body .website {
   }
 }
 
+.demo-blog .header{
+  background-color:transparent;
+}
 
 .demo-blog .demo-blog__posts {
   max-width: 900px;
@@ -197,18 +200,12 @@ body .website {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.aboutme {
-  -webkit-order: 0;
-      -ms-flex-order: 0;
-          order: 0;
-}
-.demo-blog.is-small-screen .demo-blog__posts > .mdl-card.projects {
-  -webkit-order: -1;
-      -ms-flex-order: -1;
-          order: -1;
-}
+
 .demo-blog .aboutme .mdl-card__media {
   background-image: url('images/aboutme.jpg');
+}
+.demo-blog .aboutme:hover .mdl-card__media {
+  background-image:url('images/aboutme.gif');
 }
 .demo-blog .projects .mdl-card__media {
   display: -webkit-flex;
