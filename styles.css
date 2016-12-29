@@ -68,6 +68,7 @@ body .website {
 .demo-blog .mdl-layout__Drawer-button{
   color:white;
 
+
 }
 
 .demo-blog.mdl-layout .mdl-layout__content {
@@ -219,6 +220,13 @@ body .website {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+body:after{
+  display:none;
+  content:url("images/aboutme.gif") url("images/project.gif")
+          url("images/experience.gif") url("images/skills.gif")
+          url("images/resume.gif");
 }
 
 .demo-blog .aboutme .mdl-card__media {
