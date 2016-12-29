@@ -65,6 +65,11 @@ body .website {
           flex-shrink: 0;
 }
 
+.demo-blog .mdl-layout__Drawer-button{
+  color:white;
+
+}
+
 .demo-blog.mdl-layout .mdl-layout__content {
   padding-top: 100px;
   position: relative;
@@ -274,6 +279,11 @@ body .website {
 }
 .exph3{
 padding-top:180px;
+
+}
+.skillz{
+padding:3em;
+margin:-3em;
 
 }
 .isVisible{

@@ -23,7 +23,6 @@
   margin-bottom: 40px;
   z-index: 900;
 }
-<!-- Uses a transparent header that draws on top of the layout's background -->
 
 .demo-layout-transparent {
 background: url('/images/background.jpg') center / cover;
@@ -68,8 +67,8 @@ function searchFunction(){
 
 
 
-<div class="demo-blog mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent ">
+<div class="demo-blog mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
     <div class="mdl-layout__header-row">
       <!-- Title -->
       <span class="mdl-layout-title">Neelaksh Bhatia</span>
@@ -136,7 +135,7 @@ function searchFunction(){
         </div>
       </div>
 
-      <div class="mdl-card isVisible card mdl-shadow--16dp skills mdl-cell mdl-cell--6-col mdl-cell-8-col-tablet mdl-cell-8-col-mobile">
+      <div class="mdl-card isVisible card mdl-shadow--16dp skills mdl-cell mdl-cell--8-col mdl-cell-8-col-tablet mdl-cell--6-col-desktop">
 
         <div class="mdl-card__media skill mdl-color-text--blue-grey-50">
           <h3><a href="skills.html">Skills</a></h3>
