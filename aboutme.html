@@ -47,13 +47,8 @@ var scrollToTop = function() {
   scrollTo(true);
 };
 
-var scrollToBottom = function() {
-  scrollTo(false);
-};
-
 $(function() {
   $("#scroll-up-btn").click(scrollToTop);
-  $("#scroll-down-btn").click(scrollToBottom);
 });
 </script>
 
@@ -70,7 +65,7 @@ $(function() {
 
       <div class="demo-blog__posts mdl-grid">
         <div class="mdl-card mdl-shadow-4dp mdl-cell mdl-cell--12-col">
-          <div class="mdl-card__media mdl-color-text--grey-50">
+          <div class="mdl-card__media abtme mdl-color-text--grey-50">
             <h3>About Me</h3>
           </div>
           <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
@@ -132,7 +127,7 @@ $(function() {
         </div>
 
         <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
-          
+
           <button id="scroll-up-btn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
               <i class="material-icons">arrow_upward</i>
           </button>
