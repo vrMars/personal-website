@@ -94,7 +94,7 @@ body .website {
 
 }
 
-.demo-blog .mdl-card:hover{
+.demo-blog .mdl-card:hover .card{
   -webkit-transform:scale(1.005);
   box-shadow:
   0 5px 5px 5px rgba(0, 0, 0, 0.3);
@@ -332,6 +332,10 @@ margin:-3em;
   font-weight: 500;
 }
 
+#scroll-up-btn{
+  margin-left:50%;
+}
+
 .demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button {
   color: white;
   text-decoration: none;
@@ -340,12 +344,7 @@ margin:-3em;
   color: rgba(0,0,0,0.54);
   background-color: white;
 }
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:first-child .mdl-button {
-  margin-right: 16px;
-}
-.demo-blog .demo-blog__posts > .demo-nav > .demo-nav__button:last-child .mdl-button {
-  margin-left: 16px;
-}
+
 .demo-blog .mdl-card > a {
   color: transparent;
   text-decoration: none;
@@ -400,7 +399,7 @@ margin:-3em;
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
   margin: 16px auto;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 28px;
 }
 

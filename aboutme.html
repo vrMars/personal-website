@@ -2,6 +2,7 @@
 
 <html lang="en">
 <head>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Neelaksh's Personal Website!">
@@ -35,6 +36,27 @@ color: white;
 }
 </style>
 
+<script>
+var scrollTo = function(top) {
+  var content = $(".mdl-layout__content");
+  var target = top ? 0 : $(".page-content").height();
+  content.stop().animate({ scrollTop: target }, "slow");
+};
+
+var scrollToTop = function() {
+  scrollTo(true);
+};
+
+var scrollToBottom = function() {
+  scrollTo(false);
+};
+
+$(function() {
+  $("#scroll-up-btn").click(scrollToTop);
+  $("#scroll-down-btn").click(scrollToBottom);
+});
+</script>
+
 </head>
 
 <body>
@@ -48,25 +70,75 @@ color: white;
 
       <div class="demo-blog__posts mdl-grid">
         <div class="mdl-card mdl-shadow-4dp mdl-cell mdl-cell--12-col">
-          <div class="mdl-card__media aboutme mdl-color-text-grey-50">
+          <div class="mdl-card__media mdl-color-text--grey-50">
             <h3>About Me</h3>
           </div>
           <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
             <div class="myInitials"></div>
             <div>
               <strong>Neelaksh Bhatia</strong>
-              <span>Computer Science Student </span>
+              <span>Computer Science Student</span>
             </div>
           <div class="section-spacer"></div>
           <div class="meta__favorites">
-            <i class="material-icons" role="presentation">thumb up</i>
+            <i class="material-icons" role="presentation">thumb_up</i>
             <span class="visuallyhidden">favorites</span>
           </div>
         </div>
-
+          <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
+            <p>
+            Hi.
+            </p>
+            <p>
+              My name is Neelaksh.
+            </p>
+            <p>
+            Hi.
+            </p>
+            <p>
+              My name is Neelaksh.
+            </p>
+            <p>
+            Hi.
+            </p>
+            <p>
+              My name is Neelaksh.
+            </p>
+            <p>
+            Hi.
+            </p>
+            <p>
+              My name is Neelaksh.
+            </p>
+            <p>
+            Hi.
+            </p>
+            <p>
+              My name is Neelaksh.
+            </p>
+            <p>
+            Hi.
+            </p>
+            <p>
+              My name is Neelaksh.
+            </p>
+            <p>
+            Hi.
+            </p>
+            <p>
+              My name is Neelaksh.
+            </p>
+          </div>
         </div>
 
+        <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+          
+          <button id="scroll-up-btn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+              <i class="material-icons">arrow_upward</i>
+          </button>
 
+
+        </nav>
       </div>
     </main>
     </div>
