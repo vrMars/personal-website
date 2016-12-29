@@ -330,7 +330,7 @@ padding-top:180px;
   margin-left: 16px;
 }
 .demo-blog .mdl-card > a {
-  color: inherit;
+  color: transparent;
   text-decoration: none;
   font-weight: inherit;
 }
