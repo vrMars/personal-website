@@ -85,43 +85,87 @@ $(function() {
             <span class="visuallyhidden">favorites</span>
           </div>
         </div>
-          <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
 
-            <div class="mdl-grid background-color:red">
-              <div class="cycle-slideshow"
-              data-cycle-swipe="true"
-              data-cycle-swipe-fx=scrollHorz
+        <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
+          <p> I love to work on fun and interesting projects that challenge me to think in new and creative ways. </p>
+          <h5> Here is a brief list of my favourite projects that I've worked on! </h5>
+        </div>
+
+        <div class="mdl-card__supporting-text mdl-grid mdl-color-text--grey-700 meta">
+
+          <nav class="demo-nav  mdl-color-text--grey-50">
+            <a class="demo-nav__button">
+            <button id="prev" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+
+          </a>
+
+            <a class="demo-nav__button">
+            <button id="next" class="mdl-button mdl-cell mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+
+          </a>
+
+          </nav>
+
+
+          <div class="cycle-slideshow"
               data-cycle-fx="scrollHorz"
-              data-cycle-timeout="2000"
+              data-cycle-timeout="0"
               data-cycle-slides="> div"
-              >
-                <div class="mdl-card mdl-cell mdl-cell--12-col">
-                  <div class="mdl-card__media mdl-color-text--grey-50">
-                    <h3>Project 1</h3>
+              data-cycle-next="#next"
+              data-cycle-prev="#prev"
+          >
+
+              <div class="mdl-card mdl-shadow-16dp ">
+                  <div class="mdl-card__media mdl-color-text--grey-50 project1">
+                    <h3>Project One!</h3>
                   </div>
-                </div>
-                <div class="mdl-card mdl-cell mdl-cell--12-col">
-                  <div class="mdl-card__media mdl-color-text--grey-50">
-                    <h3>Project 2</h3>
+                  <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
+                    <div class="myInitials"></div>
+                    <div>
+                      <strong>Project One</strong>
+                    </div>
                   </div>
-                </div>
-                <div class="mdl-card mdl-cell mdl-cell--12-col">
+              </div>
+
+              <div class="mdl-card mdl-shadow-16dp ">
                   <div class="mdl-card__media mdl-color-text--grey-50">
-                    <h3>Project 3</h3>
+                    <h3>Project Two!</h3>
                   </div>
-                </div>
-            </div>
-          </div>
+                  <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
+                    <div class="myInitials"></div>
+                    <div>
+                      <strong>Project Two</strong>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="mdl-card mdl-shadow-16dp">
+                  <div class="mdl-card__media mdl-color-text--grey-50">
+                    <h3>Project Three!</h3>
+                  </div>
+                  <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
+                    <div class="myInitials"></div>
+                    <div>
+                      <strong>Project Three</strong>
+                    </div>
+                  </div>
+              </div>
 
         </div>
       </div>
 
+      </div>
         <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
           <button id="scroll-up-btn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
               <i class="material-icons">arrow_upward</i>
           </button>
         </nav>
-        </div>
+
+      </div>
     </main>
   </div>
 </body>

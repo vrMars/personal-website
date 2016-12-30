@@ -117,7 +117,6 @@ body .website {
 
 
 
-
 .demo-blog .mdl-card__title {
   padding: 16px;
   -webkit-flex-grow: 1;
@@ -172,11 +171,26 @@ body .website {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.cycle-slideshow{
+  width:75%;
+  height:auto;
+
+}
+.cycle-slideshow div{
+  width:100%;
+
+}
+.project1{
+
+}
 .demo-blog .mdl-card__supporting-text strong {
   font-weight: 400;
 }
 .demo-blog .mdl-card__media ~ .mdl-card__supporting-text {
-  min-height: 64px;
+  min-height: 100px;
+
+
 }
 .demo-blog .mdl-card__supporting-text:not(:last-child) {
   box-sizing: border-box;
@@ -420,7 +434,7 @@ margin:-3em;
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
   margin: 16px auto;
-  font-size: 18px;
+  font-size: 16px;
   line-height: 28px;
 }
 
