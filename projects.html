@@ -93,23 +93,6 @@ $(function() {
 
         <div class="mdl-card__supporting-text mdl-grid mdl-color-text--grey-700 meta">
 
-          <nav class="demo-nav  mdl-color-text--grey-50">
-            <a class="demo-nav__button">
-            <button id="prev" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-
-          </a>
-
-            <a class="demo-nav__button">
-            <button id="next" class="mdl-button mdl-cell mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_forward</i>
-            </button>
-
-          </a>
-
-          </nav>
-
 
           <div class="cycle-slideshow"
               data-cycle-swipe=true
@@ -120,6 +103,21 @@ $(function() {
               data-cycle-next="#next"
               data-cycle-prev="#prev"
           >
+
+          <nav class="demo-nav  mdl-color-text--grey-50">
+            <button id="prev" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+
+            <div class="section-spacer"></div>
+
+
+
+          <button id="next" class="mdl-button mdl-cell mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+              <i class="material-icons">arrow_forward</i>
+          </button>
+
+          </nav>
 
               <div class="mdl-card mdl-shadow-16dp ">
                   <div class="mdl-card__media mdl-color-text--grey-50 project1">
