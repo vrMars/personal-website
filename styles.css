@@ -175,7 +175,7 @@ body .website {
 }
 
 .cycle-slideshow{
-  width:75%;
+  width:100%;
   height:auto;
 
 }
@@ -344,8 +344,11 @@ margin:-3em;
 .demo-blog .resume:hover .mdl-card__media {
   background-image: url('images/resume.gif');
 }
-.demo-blog .demo-blog__posts > .demo-nav {
+
+
+.demo-blog .demo-blog__posts .cycle-slideshow > .demo-nav {
   margin: 12px 15px;
+  width:100%;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
@@ -374,6 +377,7 @@ margin:-3em;
   color: rgba(0,0,0,0.54);
   background-color: white;
 }
+
 
 .demo-blog .mdl-card > a {
   color: transparent;
