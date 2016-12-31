@@ -458,7 +458,12 @@ margin:-3em;
   background-image: url('images/aboutme.jpg');
   height: 280px;
 }
-
+.demo-blog--blogpost .demo-blog__posts  > .mdl-card .sklz {
+  background-image: url('images/skills.jpg');
+  height: 280px;
+  background-repeat:no-repeat;
+  background-size:cover;
+}
 .demo-blog--blogpost .demo-blog__posts  > .mdl-card .proj {
   background-image: url('images/project.jpg');
   height: 280px;
