@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
 
 
@@ -18,6 +18,17 @@
 <link rel="stylesheet" href="styles.css">
 
 <script>
+jQuery(document).ready(function() {
+  jQuery('.skillbar').each(function() {
+    jQuery(this).find('.skillbar-bar').animate({
+      width: jQuery(this).attr('data-percent')
+    }, 1500);
+  });
+});
+</script>
+<script>
+
+
 var scrollTo = function(top) {
   var content = $(".mdl-layout__content");
   var target = top ? 0 : $(".page-content").height();
@@ -57,7 +68,7 @@ $(function() {
             <div class="myInitials"></div>
             <div>
               <strong>Neelaksh Bhatia</strong>
-              <span>Computer Science Student</span>
+            
             </div>
           <div class="section-spacer"></div>
           <div class="meta__favorites">
@@ -65,13 +76,79 @@ $(function() {
             <span class="visuallyhidden">favorites</span>
           </div>
         </div>
-          <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
-            <h3 style="padding-bottom:30px">Languages: </h3>
-            <canvas style="padding-bottom:30px" id="myChart"></canvas>
+          <div class=" mdl-card__supporting-text mdl-grid">
 
-            <h3 style="padding-bottom:30px">Tools: </h3>
-            <canvas id="myChart2"></canvas>
+            <h4 class="mdl-cell mdl-cell--12-col" style="padding-bottom:20px">Technical Skills:</h4>
 
+            <div class="skillbar clearfix " data-percent="90%">
+              <div class="skillbar-title" style="background: #006400;"><span>Android (Java)</span></div>
+              <div class="skillbar-bar" style="background: #006400;"></div>
+              <div class="skill-bar-percent">90%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <div class="bar-spacer"></div>
+
+            <div class="skillbar clearfix " data-percent="85%">
+              <div class="skillbar-title" style="background: #2980b9;"><span>iOS (Swift)</span></div>
+              <div class="skillbar-bar" style="background: #3498db;"></div>
+              <div class="skill-bar-percent">85%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <div class="bar-spacer"></div>
+
+            <div class="skillbar clearfix " data-percent="85%">
+              <div class="skillbar-title" style="background: #FFA500;"><span>HTML/CSS</span></div>
+              <div class="skillbar-bar" style="background: #FFA500;"></div>
+              <div class="skill-bar-percent">85%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <div class="bar-spacer"></div>
+
+            <div class="skillbar clearfix " data-percent="80%">
+              <div class="skillbar-title" style="background: #46465e;"><span>JavaScript</span></div>
+              <div class="skillbar-bar" style="background: #5a68a5;"></div>
+              <div class="skill-bar-percent">80%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <div class="skillbar clearfix " data-percent="75%">
+              <div class="skillbar-title" style="background: #333333;"><span>Racket</span></div>
+              <div class="skillbar-bar" style="background: #525252;"></div>
+              <div class="skill-bar-percent">75%</div>
+            </div>
+            <!-- End Skill Bar -->
+            <div class="bar-spacer"></div>
+          </div>
+          <div class="mdl-grid mdl-card__supporting-text">
+
+
+
+            <h4 class="mdl-grid mdl-cell mdl-cell--12-col"style="padding-bottom:20px">General Skills: </h4>
+            <ul class="ul-mdl mdl-cell mdl-cell--4-col mdl-cell--4-col-dekstop">
+              <li>Leadership</li>
+              <li>Time Management</li>
+              <li>Entrepreneurial</li>
+              <li>Team Work</li>
+              <li>Motivational</li>
+            </ul>
+
+            <ul class="ul-mdl mdl-cell mdl-cell--4-col mdl-cell--4-col-dekstop">
+              <li>Android Studio</li>
+              <li>XCode</li>
+              <li>Eclipse IDE</li>
+              <li>GIT</li>
+              <li>Sketch 3</li>
+            </ul>
+
+
+            <ul class="ul-mdl mdl-cell mdl-cel--12-col mdl-cell--4-col-desktop">
+              <li>Clarifai API</li>
+              <li>Firebase API</li>
+              <li>Facebook APIs</li>
+              <li>Google APIs</li>
+              <li>Twitter APIs</li>
+            </ul>
+
+          </div>
           </div>
         </div>
 
@@ -87,60 +164,5 @@ $(function() {
     </main>
     </div>
 
-    <script>
-    var ctx = document.getElementById("myChart");
-    var myChart = new Chart(ctx, {
-        type: 'doughnut',
-        data: {
-            labels: ["Android (Java)", "iOS (Swift)", "HTML/CSS", "JavaScript", "Racket"],
-            datasets: [{
-
-                data: [80, 80, 90, 75, 70],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
-
-                ],
-
-            }]
-        },
-        options: {
-            tooltips:{
-
-
-            }
-        }
-    });
-
-    var ctx2 = document.getElementById("myChart2");
-    var myChart2 = new Chart(ctx2, {
-        type: 'doughnut',
-        data: {
-            labels: ["Android Studio", "XCode", "Eclipse", "GIT", "Sketch"],
-            datasets: [{
-
-                data: [90, 85, 90, 95, 75],
-                backgroundColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(54, 162, 235, 1)',
-                    'rgba(255, 206, 86, 1)',
-                    'rgba(75, 192, 192, 1)',
-                    'rgba(153, 102, 255, 1)'
-
-                ],
-
-            }]
-        },
-        options: {
-            tooltips:{
-
-
-            }
-        }
-    });
-    </script>
 </body>
 <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
