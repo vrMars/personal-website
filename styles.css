@@ -156,6 +156,14 @@ body .website {
   -webkit-transition: all 0.3s ease-in-out;
 }
 
+.mid h3{
+
+  font-size:14px;
+  font-family: 'headline', 'monospace';
+
+
+}
+
 
 
 
@@ -327,6 +335,16 @@ body:after{
   -webkit-transform: translate(0px, -28px);
           transform: translate(0px, -28px);
 }
+
+.swift .mdl-card__media {
+
+
+
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  background-image: url('images/apple.png');
+}
+
 .demo-blog .projects .mdl-card__media {
   font-size: 20px;
   font-weight: 500;
@@ -454,19 +472,43 @@ margin:-3em;
 .demo-blog--blogpost .custom-header {
   background-color: transparent;
 }
+.demo-blog--blogpost .demo-blog__posts  > .mdl-card .swift {
+  background-image: url('images/apple.png');
+  height: 280px;
+}
 .demo-blog--blogpost .demo-blog__posts  > .mdl-card .abtme {
   background-image: url('images/aboutme.jpg');
-  height: 280px;
+  height: 100px;
 }
 .demo-blog--blogpost .demo-blog__posts  > .mdl-card .sklz {
   background-image: url('images/skills.jpg');
-  height: 280px;
+  height: 100px;
   background-repeat:no-repeat;
   background-size:cover;
 }
+.demo-blog--blogspot .demo-blog__posts > .mdl-card__supporting-text .sklz2{
+  height:100px;
+}
+.bubbles{
+  background:#00b4ff;
+}
+.bubble-small {
+
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	border-radius: 50%;
+
+    -webkit-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	-moz-box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2), inset 0px 10px 30px 5px rgba(255, 255, 255, 1);
+
+    height: 100px;
+	position: absolute;
+	width: 100px;
+}
 .demo-blog--blogpost .demo-blog__posts  > .mdl-card .proj {
   background-image: url('images/project.jpg');
-  height: 280px;
+  height: 100px;
   background-position:0px -110px;
 }
 
@@ -486,10 +528,16 @@ margin:-3em;
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
+height:2000px;
+  background-color:transparent;
+
+}
+#svg {
+  width: 500px;
+  height: 300px;
 }
 .demo-blog--blogpost .meta + .mdl-card__supporting-text p {
   max-width: 512px;
-
   margin-top:75px;
   margin-bottom:50px;
   font-size: 16px;
