@@ -778,11 +778,11 @@ height:auto;
   box-sizing: border-box;
 }
 .bar-spacer{
-  margin-top:30px;
-  margin-bottom:30px;
+  margin-top:10px;
+  margin-bottom:10px;
 }
 .skillbar {
-	position:absolute;
+	position:relative;
 	display:flex;
 
 	margin-bottom:15px;
@@ -844,7 +844,9 @@ height:auto;
 	-moz-border-radius:3px;
 	-webkit-border-radius:3px;
 }
-
+.clearfix1{
+  padding-top:100px;
+}
 .skill-bar-percent {
 	position:absolute;
 	right:40px;
@@ -869,6 +871,9 @@ height:auto;
   content: '';
   display: table;
   clear: both;
+}
+.clearfix{
+  clear:both;
 }
 #cd-timeline {
   position: relative;
