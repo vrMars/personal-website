@@ -35,6 +35,42 @@ background: url('/images/background.jpg') center / cover;
 color: white;
 }
 </style>
+<script>
+$(function  (){
+    var hello = ['a student', 'a developer','a designer','a creator', 'a life-long learner'];
+    var used = ['a student'];
+    var greeting = $('#what');
+    var item;
+
+function hey() {
+
+        item = hello[Math.floor(Math.random() * hello.length)];
+        if (hello.length != used.length) {
+            while (jQuery.inArray(item, used) != -1) {
+                item = hello[Math.floor(Math.random() * hello.length)];
+            }
+            used.push(item);
+        }
+        else {
+            used.length = 0;
+            item = hello[Math.floor(Math.random() * hello.length)];
+            used.push(item);
+        }
+        greeting.html(item);
+        greeting.animate({
+            "opacity": "1"
+        }, 1500);
+    }
+
+    window.setInterval(function () {
+        greeting.animate({
+            "opacity": "0"
+        }, 1500);
+        setTimeout(hey, 1500)
+    }, 4000);
+
+  });
+</script>
 
 <script>
 var scrollTo = function(top) {
@@ -72,61 +108,30 @@ $(function() {
             <h3 class="text1">About Me</h3>
           </div>
           <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
-            <div class="myInitials"></div>
-            <div>
-              <strong>Neelaksh Bhatia</strong>
-              <span>Computer Science Student</span>
-            </div>
+
           <div class="section-spacer"></div>
           <div class="meta__favorites">
             <i class="material-icons" role="presentation">thumb_up</i>
             <span class="visuallyhidden">favorites</span>
           </div>
         </div>
-          <div class="mdl-color-text--grey-700 mdl-card__supporting-text">
-            <p>
-            Hi.
-            </p>
-            <p>
-              My name is Neelaksh.
-            </p>
-            <p>
-            Hi.
-            </p>
-            <p>
-              My name is Neelaksh.
-            </p>
-            <p>
-            Hi.
-            </p>
-            <p>
-              My name is Neelaksh.
-            </p>
-            <p>
-            Hi.
-            </p>
-            <p>
-              My name is Neelaksh.
-            </p>
-            <p>
-            Hi.
-            </p>
-            <p>
-              My name is Neelaksh.
-            </p>
-            <p>
-            Hi.
-            </p>
-            <p>
-              My name is Neelaksh.
-            </p>
-            <p>
-            Hi.
-            </p>
-            <p>
-              My name is Neelaksh.
-            </p>
+          <div class=" mdl-color-text--grey-700 mdl-card__supporting-text">
+              <p id="sentence"> Neelaksh is <span id="what">a student</span>. </p>
+
+            <div class="mdl-cell myInitials2 mdl-cell--6-col"></div>
+
+
+
+            <p id="me"> <span style="font-size:40px">Hi!</span> </p>
+            <p id="me">I'm Neelaksh </p>
+
+            <p id="me2"> I'm a hardworking and resilient developer who loves overcoming challenges and going above and beyond the norm.</p>
+            <p id="me2"> My ever-growing passion towards computers stems from the age of 3, where I first learned how to hold a mouse and operate a keyboard. This passion fueled me to develop my first Java Program at the age of 12 and publish mobile apps by the age of 16.</p>
+            <p id="me2">This drive has also led me to the Computer Science Undergrad Program at the University of Waterloo. Currently, I am in the second term of the program and am eargly looking ahead at whats to come!</p>
+
+
           </div>
+
         </div>
 
         <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
