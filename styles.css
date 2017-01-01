@@ -778,7 +778,8 @@ height:auto;
   box-sizing: border-box;
 }
 .bar-spacer{
-  height:60px;
+  margin-top:30px;
+  margin-bottom:30px;
 }
 .skillbar {
 	position:absolute;
