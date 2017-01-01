@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Neelaksh's Personal Website!">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Neelaksh Bhatia</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-orange.min.css" />
+<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="style.css"> <!-- Resource style -->
+
+<script src="js/modernizr.js"></script>
+
+<script type="text/javascript">
+
+var scrollTo = function(top) {
+  var content = $(".mdl-layout__content");
+  var target = top ? 0 : $(".page-content").height();
+  content.stop().animate({ scrollTop: target }, "slow");
+};
+
+var scrollToTop = function() {
+  scrollTo(true);
+};
+
+$(function() {
+  $("#scroll-up-btn").click(scrollToTop);
+});
+
+</script>
+
+</head>
+
+<body>
+  <div class="demo-blog demo-blog--blogpost mdl-layout mdl-js-layout has-drawer is-upgraded">
+    <main class="mdl-layout__content">
+      <div class="demo-back">
+
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" href="index.html" title="go back" role="button">
+          <i class="material-icons" role="presentation">arrow_back</i>
+        </a>
+      </div>
+
+
+      <div class="demo-blog__posts mdl-grid">
+
+        <div class="mdl-card mdl-shadow-16dp mdl-cell mdl-cell--12-col">
+          <div class="mdl-card__media exp mdl-color-text--grey-50">
+            <h3 class="text1">Experience</h3>
+          </div>
+          <div class="mdl-card__supporting-text mdl-color-text--grey-700 meta">
+            <div class="myInitials"></div>
+            <div>
+              <span class="impact">Neelaksh Bhatia</span>
+
+            </div>
+          <div class="section-spacer"></div>
+          <div class="meta__favorites">
+            <i class="material-icons" role="presentation">thumb_up</i>
+            <span class="visuallyhidden">favorites</span>
+          </div>
+        </div>
+          <div class=" mdl-card__supporting-text">
+
+            <section id="cd-timeline" class="cd-container">
+          		<div class="cd-timeline-block">
+          			<div class="cd-timeline-img cd-picture">
+          				<img src="images/weewatch.png" alt="Picture">
+          			</div> <!-- cd-timeline-img -->
+
+          			<div class="cd-timeline-content">
+          				<h2>WeeWatch Brampton</h2>
+                  <h3>System Administrator</h3>
+                  <p>At WeeWatch Brampton, I created and maintained an <span class="bold">Access Database</span> of client information. Additionally, I set up a server that allowed for a <span class="bold">parallel working environmenet</span> to take place.</p>
+                  <p>One of my most significant projects was to create a network of tablets using the <span class="bold">Microsoft Azure API</span>. The synced network maximized productivity levels! </p>
+                    <span class="cd-date">2012</span>
+                </div> <!-- cd-timeline-content -->
+          		</div> <!-- cd-timeline-block -->
+
+          		<div class="cd-timeline-block">
+          			<div class="cd-timeline-img cd-picture">
+          				<img src="images/bitsmart.png" alt="Movie">
+          			</div> <!-- cd-timeline-img -->
+
+          			<div class="cd-timeline-content">
+          				<h2>BitSmart</h2>
+                  <h3>CEO and Lead Developer</h3>
+          				<p>At BitSmart, I worked with several small businesses to <span class="bold">digitize</span> their workflow and infrastructure.
+                  <p>An interesting project I worked on was to develop a custom mapping software using the <span class="bold">Google Earth API</span>. The software takes in data from a database and visualizes it on a map using intelligent <span class="bold">geolocation</span>.</p>
+          				<span class="cd-date">2015</span>
+          			</div> <!-- cd-timeline-content -->
+          		</div> <!-- cd-timeline-block -->
+
+          		<div class="cd-timeline-block">
+          			<div class="cd-timeline-img cd-picture">
+          				<img src="images/dots.svg" alt="Picture">
+          			</div> <!-- cd-timeline-img -->
+
+          	</section> <!-- cd-timeline -->
+
+          </div>
+        </div>
+
+        <nav class="demo-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+
+          <button id="scroll-up-btn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+              <i class="material-icons">arrow_upward</i>
+          </button>
+
+
+        </nav>
+      </div>
+    </main>
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
