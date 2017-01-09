@@ -111,7 +111,7 @@ display:inline
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url("images/logo.png") center no-repeat #fff;
+	background: url("images/logo.gif") center no-repeat #fff;
 }
 
 .demo-blog .header{
