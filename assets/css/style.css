@@ -33,12 +33,16 @@ h1 {
 .pad-btm {
     padding-bottom:50px;
 }
+
+#social_media li{
+  display: inline-block;
+}
 /*======================================
     HOME SECTION STYLES
   =======================================*/
 #home-sec {
-    background-color:#29CC71;
-    line-height:30px;
+    background-color:#ffffff;
+    line-height:1px;
 }
 home-sec .carousel-caption {
     top: 50px;
@@ -47,11 +51,13 @@ home-sec .carousel-caption {
     font-size:80px;
     font-weight: 200;
     padding-bottom:10px;
+    text-shadow: none !important;
 }
 .slide-h2 {
     font-size:40px;
     font-weight:100;
     padding-bottom:10px;
+    text-shadow: none !important;
 }
 .cs{
 color: #00f2ff;
@@ -142,31 +148,17 @@ border-radius: 50%;
    MEDIA QUERIES
   =======================================*/
 
-  .parallax {
-      /* The image used */
-      background-image: url("assets/img/cover.jpg");
-
-      /* Full height */
-      height: 100%;
-
-      /* Create the parallax scrolling effect */
-      background-attachment: fixed;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-  }
-
 @media (min-width: 800px) and (max-width: 1000px) {
     .carousel-caption {
     top: 20px;
 }
     .slide-h1 {
-         font-size:30px;
+         font-size:40px;
          padding-bottom:5px;
     }
     .slide-h2 {
         padding-bottom:5px;
-        font-size: 20px;
+        font-size: 25px;
     }
    }
 
@@ -176,12 +168,12 @@ border-radius: 50%;
     top: 10px;
 }
     .slide-h1 {
-         font-size:25px;
+         font-size:30px;
          padding-bottom:3px;
     }
     .slide-h2 {
         padding-bottom:3px;
-        font-size: 15px;
+        font-size: 20px;
     }
    }
 @media (min-width: 501px) and (max-width: 630px) {
@@ -189,7 +181,7 @@ border-radius: 50%;
     top: 5px;
 }
     .slide-h1 {
-         font-size:25px;
+         font-size:30px;
          padding-bottom:3px;
     }
     .slide-h2 {
@@ -199,9 +191,14 @@ border-radius: 50%;
 @media (min-width: 100px) and (max-width: 499px) {
 
     .slide-h1 {
-        display:none;
+        font-size: 25px;
+        padding-bottom: 2px;
     }
     .slide-h2 {
         display:none;
+    }
+
+    #nav{
+      display: none;
     }
    }
