@@ -1,95 +1,219 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="../../favicon.ico">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-
-  <title>Cover Template for Bootstrap</title>
-
-  <!-- Bootstrap core CSS -->
-  <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="cover.css" rel="stylesheet">
-  <link href="carousel.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <![endif]-->
+    <title>Neelaksh Bhatia</title>
+    <!-- BOOTSTRAP CORE STYLE CSS -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
+    <!-- FONT AWESOME CSS -->
+    <link href="assets/css/font-awesome.css" rel="stylesheet" />
+    <!-- ANIMATION STYLES -->
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <!-- CUSTOM STYLE CSS -->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <!-- GOOGLE FONT -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:100,200,300' rel='stylesheet' type='text/css' />
 </head>
-<script>
-document.addEventListener('mousemove', function (event) {
-// You will need to replace every instance of elementid with what ever id you have chosen.
-
-	// This takes care of IE...just in case some one is still using it.
-	if (window.event) {
-		event = window.event;
-	}
-
-	// Gets the position of your mouse
-	var mousepositonx = event.clientX;
-	var mousepositony = event.clientY;
-
-	//Gets the element id of the element the background image is applied to
-	var bgImage = document.getElementById('bgImage');
-
-	//Sets the background position to chage based on the mouse position
-	bgImage.style.backgroundPositionX = mousepositonx/200 + 'px';
-	bgImage.style.backgroundPositionY = mousepositony/200 + 'px';
-
-}, false);
-</script>
-
 <body>
-  <div class="site-wrapper first" id="bgImage">
 
-    <div class="site-wrapper-inner row" >
+    <div id="home-sec">
 
-      <div class="inner cover">
-        <h1 class="cover-heading">Neelaksh Bhatia</h1>
-        <p class="lead">Computer Science</p>
-        <p class="lead2">University of Waterloo</p>
+        <div id="carousel-example" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="assets/img/cover.jpg" height="10" alt="" />
+                    <div class="carousel-caption">
+                        <h1 class="slide-h1 wow bounceInDown" data-wow-duration="1s">Neelaksh Bhatia</h1>
+                        <h2 class="slide-h2 wow bounceInRight" data-wow-duration="1s" data-wow-delay="0.25s">Computer Science</h2>
+                        <h2 class="slide-h2 uw wow bounceInLeft" data-wow-duration="1s" data-wow-delay="0.25s">University of Waterloo</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HOME SECTION END-->
+    <div id="nav">
+        <ul class="list-unstyled">
+            <li><a data-toggle="tooltip" data-placement="left" title="Home" href="#home-sec">Home</a></li>
+            <li><a data-toggle="tooltip" data-placement="left" title="About" href="#about-sec">About</a></li>
+            <li><a data-toggle="tooltip" data-placement="left" title="Experience" href="#experience-sec">Experience</a></li>
+            <li><a data-toggle="tooltip" data-placement="left" title="Projects" href="#projects-sec">Projects</a></li>
+            <li><a data-toggle="tooltip" data-placement="left" title="Contact" href="#contact-sec">Contact</a></li>
+        </ul>
+    </div>
+    <!-- NAV SECTION END-->
+    <section id="about-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">ABOUT </h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus.
+                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus.
+                    </p>
+                </div>
 
-      </div>
+            </div>
+        </div>
+    </section>
+    <!-- ABOUT SECTION END-->
+    <section id="experience-sec">
+        <div class="container ">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">Experience </h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                    </p>
+                </div>
+
+            </div>
+            <div class="row ">
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 text-center" data-scroll-reveal="enter from the bottom after 0.5s">
+                    <i class="fa fa-recycle fa-5x"></i>
+                    <h4 >Responsive Design</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 text-center" data-scroll-reveal="enter from the bottom after 0.7s" >
+                    <i class="fa fa-briefcase fa-5x"></i>
+                    <h4>Easy to Customize</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 text-center" data-scroll-reveal="enter from the bottom after 0.9s">
+                    <i class="fa fa-history fa-5x"></i>
+                    <h4>Free to Use</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- FEATURE SECTION END-->
+    <section id="team-sec">
+        <div class="container">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">TEAM </h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.4s">
+                    <img src="assets/img/1t.jpg" class="img-circle img-responsive set-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.5s">
+                    <h2>LEENA CHI MAXI</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <img src="assets/img/2t.jpg" class="img-circle img-responsive set-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.7s">
+                    <h2>JHON DEO ALEX</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           Lorem ipsum dolor sit amet.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <!-- TEAM SECTION END-->
+    <section id="contact-sec">
+        <div class="container">
+            <div class="row pad-btm">
+                <div class="col-lg-8 col-md-8 col-sm-8 col-lg-offset-2 col-md-offset-2 col-sm-offset-2 col-xs-12">
+                    <h1 data-scroll-reveal="enter from the bottom after 0.1s">CONTACT </h1>
+                    <p data-scroll-reveal="enter from the bottom after 0.3s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris sagittis felis dolor, id gravida tellus tempor vitae. In efficitur ipsum non faucibus tempus.
+                    </p>
+                </div>
+
+            </div>
+            <div class="row pad-btm">
+
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12  " data-scroll-reveal="enter from the bottom after 0.5s">
+                    <h2>Our Location</h2>
+                    <p>
+                        234/89 , UGCH BUILDING HOUSE,
+                           <br />
+                        DOUBLE LANE, NEW YORK CITY,
+                           <br />
+                        UNITED STATES
+                    </p>
+                </div>
+                <div class="col-lg-2 col-md-2 col-sm-2  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <img src="assets/img/1t.jpg" class="img-circle img-responsive cnt-img" />
+
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4  col-xs-12 " data-scroll-reveal="enter from the bottom after 0.6s">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                          Lorem ipsum dolor sit amet.
+                    </p>
+                    <div class="form-group">
+                        <input type="text" class="form-control" />
+                        <br />
+                        <a href="#" class="btn btn-primary">SUBSCRIBE FOR UPDATES</a>
+                    </div>
+                </div>
+
+            </div>
+
+                 </div>
+
+    </section>
+    <!-- CONTACT SECTION END-->
+    <div id="footer-sec">
+           &nbsp;2014 Yourdomain.com |
+             <a href="http://binarytheme.com" style="font-size: 14px; color: #fff" target="_blank">Design by : binarytheme.com</a>
 
     </div>
-
-  </div>
-
-    <div class="container marketing">
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-        <div class="col-lg-4">
-          <img class="rounded-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      </div><!-- /.row -->
-
-    </div>
-
-  <!-- Bootstrap core JavaScript
-  ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-  <script src="../../dist/js/bootstrap.min.js"></script>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- FOOTER SECTION END-->
+    <!--CORE SCRIPTS-->
+    <script src="assets/js/jquery-1.11.1.js"></script>
+    <!--BOOTSTRAP SCRIPTS-->
+    <script src="assets/js/bootstrap.js"></script>
+    <!--WOW SCRIPTS-->
+    <script src="assets/js/wow.js"></script>
+    <!--SCROLL SCRIPTS-->
+    <script src="assets/js/jquery.smooth-scroll.min.js"></script>
+    <!--SCROLL ANIMATION SCRIPTS-->
+    <script src="assets/js/scrollReveal.js"></script>
+    <!--CUSTOM SCRIPTS-->
+    <script src="assets/js/custom.js"></script>
 </body>
+
 </html>
