@@ -124,6 +124,11 @@ border-radius: 50%;
 .set-img {
     border:10px solid #29CC71;
 }
+.project-card{
+  width: auto;
+  height: auto;
+  background-color: purple;
+}
 /*======================================
    CONTACT SECTION STYLES
   =======================================*/
