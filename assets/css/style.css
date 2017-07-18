@@ -29,7 +29,7 @@ a, a:hover, a:visited, a:active, a:link{
 }
 
 #wrapper{
-transition: background-color 700ms;
+transition: background-color 1000ms;
 
 }
 .social-icons{
@@ -82,7 +82,7 @@ home-sec .carousel-caption {
 }
 .slide-h2 {
     font-size:35px;
-    font-weight:100;
+    font-weight:200;
     padding-bottom:40px;
     text-shadow: none !important;
 }
@@ -129,7 +129,9 @@ border-radius: 50%;
 /*======================================
    ABOUT SECTION STYLES
   =======================================*/
-
+.blur{
+  filter:blur(3px) brightness(0.8);
+}
 #about-sec {
   color:white;
   background-color: transparent;
@@ -154,7 +156,8 @@ border-radius: 50%;
 .project-card{
   width: auto;
   height: auto;
-  background-color: purple;
+  background-color: transparent;
+  border:1px dashed #FFFFFF;
   transform: scale(1,1);
   transition-duration: 0.5s;
 }
