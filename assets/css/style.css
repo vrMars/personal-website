@@ -23,6 +23,16 @@ line-height:35px;
  .carousel-caption {
     top: 50px;
 }
+
+.social-icons{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.social-icons li{
+  display: inline;
+  padding:20px;
+}
 section {
     padding-top:90px ;
     padding-bottom:100px;
@@ -128,6 +138,12 @@ border-radius: 50%;
   width: auto;
   height: auto;
   background-color: purple;
+  transform: scale(1,1);
+  transition-duration: 0.5s;
+}
+.project-card:hover{
+  transform: scale(1.05,1.05);
+  transition-duration: 0.5s;
 }
 /*======================================
    CONTACT SECTION STYLES

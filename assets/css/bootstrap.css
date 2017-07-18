@@ -938,6 +938,12 @@ img {
   width: 100% \9;
   max-width: 100%;
   height: auto;
+  transform: scale(1,1);
+  transition-duration: 0.5s;
+}
+.img-responsive:hover{
+  transform: scale(1.1,1.1);
+  transition-duration: 0.5s;
 }
 .img-rounded {
   border-radius: 6px;
