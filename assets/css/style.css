@@ -23,6 +23,11 @@ line-height:35px;
  .carousel-caption {
     top: 50px;
 }
+a, a:hover, a:visited, a:active, a:link{
+  text-decoration: none;
+  color:white;
+}
+
 #wrapper{
 transition: background-color 700ms;
 
@@ -72,13 +77,13 @@ home-sec .carousel-caption {
 .slide-h1 {
     font-size:80px;
     font-weight: 200;
-    padding-bottom:10px;
+    padding-bottom:20px;
     text-shadow: none !important;
 }
 .slide-h2 {
-    font-size:40px;
+    font-size:35px;
     font-weight:100;
-    padding-bottom:10px;
+    padding-bottom:40px;
     text-shadow: none !important;
 }
 .cs{
