@@ -929,7 +929,6 @@ figure {
 img {
   vertical-align: middle;
 }
-.img-responsive,
 .thumbnail > img,
 .thumbnail a > img,
 .carousel-inner > .item > img,
@@ -941,8 +940,13 @@ img {
   transform: scale(1,1);
   transition-duration: 0.5s;
 }
-.img-responsive:hover{
-  transform: scale(1.1,1.1);
+.img-responsive{
+  display: block;
+  width: 50% \9;
+  max-width: 50%;
+  padding:10px;
+  height: auto;
+  transform: scale(1,1);
   transition-duration: 0.5s;
 }
 .img-rounded {
@@ -5736,7 +5740,7 @@ button.close {
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
-  line-height: 1;
+
 }
 .carousel-inner > .active,
 .carousel-inner > .next,
